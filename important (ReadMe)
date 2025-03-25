@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: Spring Employee Management
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_employee_management
+    username: ""
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: "smtp.gmail.com"
+    port: 587
+    username: ""
+    password: ""
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+        ssl:
+          trust: "*"
+jwt:
+  secret: 1o4RbVqRTa+lEWCx9ZKPNProd7NINpEPB46grgr2mW8=
+  accessTokenLife: 500
+  refreshTokenLife: 30
+  issuer: www.xrontech.com
+springdoc:
+  paths-to-match: /**
